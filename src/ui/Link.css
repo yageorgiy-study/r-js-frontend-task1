@@ -1,0 +1,8 @@
+a.Link {
+    color: #61dafb;
+    padding-right: 16px;
+}
+
+a.Link:last-child{
+    padding-right: inherit;
+}

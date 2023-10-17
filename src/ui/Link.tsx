@@ -1,23 +1,6 @@
-import React, { Component } from 'react';
-import styles from './Button.module.css';
-import './another-stylesheet.css';
+import React from 'react';
+import './Link.css';
 
-class Link extends Component {
-
-  protected _title: string = "";
-  protected _link: string = "";
-
-  public get title(){
-    return this.title;
-  }
-
-  public set title(title: string){
-    this._title = title;
-  }
-
-  render() {
-    return <a className={styles.error} href={this._link} rel="noopener noreferrer">{this._title}</a>;
-  }
-
-
+export default function Link({linkName, url}: {linkName: string, url: string}){
+    return (<a className={"Link"} href={url} rel="noopener noreferrer">{linkName}</a>);
 }
